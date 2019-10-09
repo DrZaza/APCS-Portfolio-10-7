@@ -15,7 +15,7 @@ class Palindrome
     else
       System.out.println("No, that is not a palindrome.");
   } 
-  public static void main (String[] args)      
+  public void Play()     
   { 
    boolean typing = true;
    System.out.println("\u000C");
