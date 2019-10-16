@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=Palindrome
+comment0.target=PalindromeMethods
 comment1.params=s
 comment1.target=void\ checkPalindrome(java.lang.String)
 comment2.params=

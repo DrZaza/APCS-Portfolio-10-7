@@ -1,12 +1,10 @@
 import java.util.Scanner;
-class Palindrome 
+class PalindromeMethods 
 {
   public static void checkPalindrome(String s) 
   { 
     // reverse the given String 
-    
     String reverse = new StringBuffer(s).reverse().toString(); 
-  
     // check whether the string is palindrome or not 
 
     if(s.equals(reverse))
@@ -61,7 +59,3 @@ class Palindrome
         return alphaAndDigits;
     } 
 }
-
-    
-
-
