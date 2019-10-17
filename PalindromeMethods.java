@@ -27,7 +27,7 @@ class PalindromeMethods
        String x = "";
       while(typing==true){
         x = i.nextLine();
-        switch(x){
+        switch(x){ //If "q" or "Q" are pressed the program will end
             case "q":
                 System.out.println("Thanks for playing!");
                 typing = false;
@@ -47,7 +47,7 @@ class PalindromeMethods
         }
        }
       while(typing==true){
-       x = replaceCharacter(x);
+       x = replaceCharacter(x); //Puts Modified String through Palindrome Checker
        checkPalindrome(x.toLowerCase());
        break;
     }
@@ -55,7 +55,10 @@ class PalindromeMethods
   }
   static String replaceCharacter(String input){
         String alphaAndDigits0 = input.replaceAll("[\\s]", "");
+        //Removes Spaces
         String alphaAndDigits = alphaAndDigits0.replaceAll("[^a-zA-Z0-9 ]","");
+        //Removes Special Characters
         return alphaAndDigits;
+        //Returns Modified Strings
     } 
 }

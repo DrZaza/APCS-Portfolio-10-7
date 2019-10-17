@@ -37,7 +37,7 @@ public class PalindromeRecursion
                 break;
         }
         x = replaceCharacter(x.toLowerCase());
-        if(isPal(x))
+        if(isPal(x))//Puts Modified String though Palindrome check method
             System.out.println(x + " is a palindrome");
         else
             System.out.println(x + " is not a palindrome");
@@ -46,7 +46,10 @@ public class PalindromeRecursion
     
     static String replaceCharacter(String input){
         String alphaAndDigits0 = input.replaceAll("[\\s]", "");
+        //Removes Spaces
         String alphaAndDigits = alphaAndDigits0.replaceAll("[^a-zA-Z0-9 ]","");
+        //Removes Special Characters
         return alphaAndDigits;
+        //Returns Modified String
     }
 }

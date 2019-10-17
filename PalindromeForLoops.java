@@ -20,9 +20,9 @@ class PalindromeForLoops {
         }
 
         if (inputString.equals(reverseString))
-            System.out.println("The input String is a palindrome.");
+            System.out.println(inputString + " is a palindrome.");
         else
-            System.out.println("The input String is not a palindrome.");
+            System.out.println(inputString + " is not a palindrome.");
 
     }
 }
