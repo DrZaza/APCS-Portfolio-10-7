@@ -3,30 +3,32 @@ public class palindromeTest{
     public static void main(String[]args){
         Scanner input = new Scanner(System.in);
         while(1==1){
-            String response = input.nextLine();
-            if (isPal(response)){
-                System.out.println(response + " is a palindrome");
+            String response1 = input.nextLine();
+            String response2 = response1;
+            response2 = replaceCharacter(response2.toLowerCase());
+            if (isPal(response2)){
+                System.out.println(response2 + " is a palindrome");
             }
             else{
-                System.out.println(response + is not a palindrome");
+                System.out.println(response2 + "is not a palindrome");
             }
         }    
     }
     public static boolean isPal(String s){
             String response = s;
             char c = 'Z';
-            boolean palindrome;
+            boolean palindrome = true;
             for(int i = 0; i<response.length();i++){
                 c = response.charAt(i);
                 if(response.charAt(i) == response.charAt(response.length() - (i+1)))
                 {
                     palindrome = true;
-                    return isPal(true);
                 }
                 else{
                     palindrome = false;
                 } 
             }
+            return palindrome;
     }
     static String replaceCharacter(String input){
         String alphaAndDigits0 = input.replaceAll("[\\s]", "");
