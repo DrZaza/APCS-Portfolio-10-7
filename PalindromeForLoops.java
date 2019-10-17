@@ -1,9 +1,7 @@
 import java.util.Stack;
 import java.util.Scanner;
 class PalindromeForLoops {
-
     public static void main(String[] args) {
-
     	System.out.print("Enter any string:");
         Scanner in=new Scanner(System.in);
         String inputString = in.nextLine();
