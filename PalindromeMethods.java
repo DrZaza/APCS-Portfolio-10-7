@@ -20,7 +20,7 @@ class PalindromeMethods
    System.out.println("Welcome to the Palindrome Program!");
    System.out.println("Press \"Q\" at any time to quit");
    while(typing==true){
-       System.out.println("----------");
+       System.out.println("--------------------");
        System.out.println("Enter a String:");
        
        Scanner i = new Scanner(System.in);

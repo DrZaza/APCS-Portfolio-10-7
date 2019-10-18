@@ -7,7 +7,7 @@ public class Main
         boolean active = true;
         Scanner input = new Scanner(System.in);
         PalindromeMethods palindromeMethods = new PalindromeMethods();
-        //PalindromeForLoops palindromeFor = new PalindromeForLoops();
+        PalindromeForLoops palindromeFor = new PalindromeForLoops();
         PalindromeRecursion palindromeRecursion = new PalindromeRecursion();
         WA_Strings wa_Strings = new WA_Strings();
         WA_Strings2 wa_Strings2 = new WA_Strings2();
@@ -33,9 +33,9 @@ public class Main
                     case "1":
                         palindromeMethods.Play();
                         break;
-                    /*case "2":
+                    case "2":
                         palindromeFor.Play();
-                        break;*/
+                        break;
                     case "3":
                         palindromeRecursion.Play();
                         break;

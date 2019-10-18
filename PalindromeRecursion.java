@@ -22,6 +22,7 @@ public class PalindromeRecursion
         boolean active = true;
         Scanner input = new Scanner(System.in);
         while(active){
+        System.out.println("--------------------");
         System.out.println("Enter a String:");
         String x = input.nextLine();
         switch(x){
