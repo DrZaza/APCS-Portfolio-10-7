@@ -34,9 +34,15 @@ public class Main
                         palindromeMethods.Play();
                         break;
                     case "2":
+                            System.out.println("\u000C");
+                            System.out.println("Welcome to the Palindrome For-Loop Based Program!");
+                            System.out.println("Press \"Q\" at any time to quit");
                         palindromeFor.Play();
                         break;
                     case "3":
+                            System.out.println("\u000C");
+                            System.out.println("Welcome to the Palindrome Recursion-Based Program!");
+                            System.out.println("Press \"Q\" at any time to quit");
                         palindromeRecursion.Play();
                         break;
                     case "4":

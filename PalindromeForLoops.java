@@ -2,15 +2,31 @@ import java.util.Scanner;
 public class PalindromeForLoops{
     public void Play(){
         Scanner input = new Scanner(System.in);
-        while(1==1){
+        boolean active = true;
+        while(active)
+        {  
+            System.out.println("--------------------");
+            System.out.println("Enter a String:");
             String response1 = input.nextLine();
+            switch(response1){
+                case "q":
+                    System.out.println("Thanks for playing!");
+                    active = false;
+                    break;
+                case "Q":
+                    System.out.println("Thanks for playing!");
+                    active = false;
+                    break;
+                default:
+                    break;
+            }
             String response2 = response1;
             response2 = replaceCharacter(response2.toLowerCase());
             if (isPal(response2)){//Checks modified String for palindrome
                 System.out.println(response1 + " is a palindrome");
             }
             else{
-                System.out.println(response1 + "is not a palindrome");
+                System.out.println(response1 + " is not a palindrome");
             }
         }    
     }
